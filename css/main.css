@@ -1,7 +1,19 @@
 html {
   box-sizing: border-box;
+  font-family: "Denk One", Georgia;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: .5em .75em .6em 1rem;
+  grid-template-areas:
+  "banner banner"
+  "box1 box2"
+  "box3 box4";
+  gap: 1rem;
+
 }
