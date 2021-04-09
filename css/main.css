@@ -1,19 +1,81 @@
 html {
   box-sizing: border-box;
-  font-family: "Denk One", Georgia;
+  font-family: Georgia serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+  background-color: #f5f2f0;
+}
+
 main {
   display: grid;
-  grid-template-columns: .5em .75em .6em 1rem;
+  grid-template-rows: 1fr;
   grid-template-areas:
-  "banner banner"
-  "box1 box2"
-  "box3 box4";
+    "banner banner"
+    "box1 box2"
+    "box3 box4";
+  gap: 1rem;
+}
+
+ol {
+  list-style-type: none;
+  padding: .5rem 1rem 1rem;
+  margin: 0;
   gap: 1rem;
 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  flex-grow: 1;
+}
+
+li {
+  background-color: #ede3db;
+  border: 2px solid #623b0c;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0 1rem 1rem;
+  width: 100%;
+}
+
+h1 {
+  grid-area: banner;
+  margin: 0;
+  padding: 1rem;
+  color: #623b0c;
+  font-family: "Denk One"
+}
+
+h2 {
+  font-family:  "Denk One",
+  color: #623b0c;
+}
+
+p {
+  font-family: Georgia;
+}
+
+a {
+  font-family: Georgia;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #623b0c;
+  background-color: #623b0c;
+  padding: .5em .75em .6em;
+  border-radius: .5em;
 }
