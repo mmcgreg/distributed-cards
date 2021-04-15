@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
 }
 
@@ -16,9 +16,11 @@ body {
   padding: 1rem;
   margin: 0;
   background-color: #f5f2f0;
+  display: flex;
 }
 
 main {
+  margin: 0;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-areas:
@@ -34,12 +36,11 @@ ol {
   margin: 0;
   gap: 1rem;
 
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   flex-grow: 1;
 }
@@ -47,27 +48,31 @@ ol {
 li {
   background-color: #ede3db;
   border: 2px solid #623b0c;
-  border-radius: 8px;
-  margin: 0;
-  padding: 0 1rem 1rem;
+  border-radius: 10px;
+  margin: 0 1rem;
+  padding: 1rem;
   width: 100%;
+
+  display: grid;
 }
 
 h1 {
   grid-area: banner;
   margin: 0;
-  padding: 1rem;
+  padding: .5rem;
   color: #623b0c;
-  font-family: "Denk One"
+  font-family: "Denk One";
+  padding-top: 0;
 }
 
 h2 {
-  font-family:  "Denk One",
+  font-family: "Denk One";
   color: #623b0c;
 }
 
 p {
   font-family: Georgia;
+  text-align: left;
 }
 
 a {
@@ -76,6 +81,7 @@ a {
   color: #fff;
   border: 2px solid #623b0c;
   background-color: #623b0c;
-  padding: .5em .75em .6em;
-  border-radius: .5em;
+  padding: .5em .5em .75em .6em;
+  border-radius: 8px;
+  gap: 1.5rem;
 }
